@@ -1,0 +1,97 @@
+.MovieContainer {
+  margin: 0px 30px 100px 130px;
+  background: #e1e2e1;
+  -webkit-box-shadow: 20px 20px 38px -5px rgba(199, 199, 199, 1);
+  -moz-box-shadow: 20px 20px 38px -5px rgba(199, 199, 199, 1);
+  box-shadow: 20px 20px 38px -5px rgba(199, 199, 199, 1);
+}
+
+.MovieContainer .mainThings {
+  display: flex;
+  justify-content: space-between;
+}
+
+.MovieContainer .mainThings * {
+  margin: 0px;
+  padding: 0px;
+}
+
+.MovieContainer .mainThings img {
+  position: relative;
+  top: -30px;
+  left: 30px;
+}
+.MovieContainer .mainThings .component {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 1;
+  margin-left: 20px;
+}
+
+.MovieContainer .mainThings .component .movie_year {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.MovieContainer .mainThings .component .movie_title {
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+
+.MovieContainer .mainThings .component ol {
+  margin-left: 20px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.MovieContainer .mainThings .component ol li {
+  padding-right: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  border-right: 1px solid black;
+}
+
+.MovieContainer p {
+  padding: 20px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 720px) {
+  .MovieContainer {
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+
+  .MovieContainer .mainThings {
+    flex-direction: column;
+  }
+  .MovieContainer .mainThings .component {
+    margin: 0;
+    padding-top: 0;
+  }
+
+  .MovieContainer .mainThings .component .movie_year {
+    font-size: 20px;
+  }
+
+  .MovieContainer .mainThings .component .movie_title {
+    font-size: 30px;
+  }
+
+  .MovieContainer .mainThings .component ol {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .MovieContainer .mainThings .component ol li {
+    margin-bottom: 5px;
+    font-size: 13px;
+    border-right: initial;
+  }
+
+  .MovieContainer p {
+    margin: 0;
+  }
+}
